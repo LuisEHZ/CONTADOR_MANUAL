@@ -4,6 +4,64 @@
              x:Class="ContadorManual.GUI.MainPage"
              Title="Contador Manual"
              Background="LightGray">
+    <Grid
+        Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition   Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <VerticalStackLayout
+            Grid.Row="0"
+            Grid.Column="0"
+            >
+            <Border
+    Stroke="Gray"
+    StrokeThickness="3"
+   Background="AntiqueWhite"
+    Margin="0,34,0,36">
+
+                <Label
+        TextColor="Black"
+Text="0"
+HorizontalOptions="Center"
+Margin="0,24"
+FontSize="Large"
+FontAttributes="Bold"
+        x:Name="ConteoLabel"
+
+/>
+
+            </Border>
+
+
+
+
+            <HorizontalStackLayout
+         HorizontalOptions="Center"
+         Spacing="32">
+                <Button Text="Contar"
+FontSize="Medium"
+                 WidthRequest="130"
+                Clicked="Button_Clicked_1"  
+                 />
+
+                <Button
+             Text="Reiniciar"
+             FontSize="Medium"
+             WidthRequest="130"
+             Clicked="Button_Clicked"/>
+
+
+            </HorizontalStackLayout>
+
+
+
+
+        </VerticalStackLayout>
+    </Grid>
+    
+    <!---
     <VerticalStackLayout
         Margin="60">
 
@@ -59,5 +117,5 @@
 
     </VerticalStackLayout>
     
-    
+  -->  
 </ContentPage>
